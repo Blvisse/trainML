@@ -8,6 +8,9 @@ print("Reading Environmental Variables")
 aws_access_key=os.getenv("AWS_S3_PACS_ACCESS_KEY")
 aws_secret_key=os.getenv("AWS_S3_PACS_SECRET_KEY")
 pacs_url=os.getenv("URL")
+print(aws_access_key)
+print(aws_secret_key)
+print(pacs_url)
 
 if (aws_access_key == None) or (aws_secret_key == None):
     print("Failed to access AWS ACCESS KEYS Terminating Program")
