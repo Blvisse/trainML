@@ -16,4 +16,8 @@ elif pacs_url == None:
     print("Failed to fetch PACS end point, Terminating Program")
     exit(1)
 else:
-    print("Successfully Retrieved AWS Access Key and PACS end point")
+    print("Successfully Retrieved AWS Access Key and PACS endpoint")
+
+def print_env():
+    print(aws_access_keys)
+    print(aws_secret_key)
